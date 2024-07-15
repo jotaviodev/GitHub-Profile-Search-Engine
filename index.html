@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Profiles</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d505108623.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="page">
         <div class="searchBar ">
             <h1>GitHub Search Engine</h1>
             <form id="form" class="center">
-                <input type="submit" style="width: 5%; height: 100%;" value="Send">
-                <input type="text" id="searchbar" style="width: 30%; height: 130%; border-radius: 40px;">
+                <button class="button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input type="text" id="searchbar" style="width: 30%; height: 40px; border-radius: 40px;">
             </form>
         </div>
         <main class="center">
             <div class="centralBox" id="centralBox">
             </div>
         </main>
+        <a href="https://github.com/${data.login}"><i class="fa-brands fa-github"></i></a>
     </div>
     <script src="script.js"></script>
 </body>
